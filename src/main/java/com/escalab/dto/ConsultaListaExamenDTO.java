@@ -5,7 +5,7 @@ import com.escalab.model.Examen;
 
 import java.util.List;
 
-public class ConsultarListaExamenDTO {
+public class ConsultaListaExamenDTO {
 
     private Consulta consulta;
     private List<Examen> lstExamen;
