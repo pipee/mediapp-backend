@@ -7,4 +7,6 @@ import com.escalab.model.Usuario;
 
 public interface IUsuarioRepo extends JpaRepository<Usuario, Integer> {
 
+
+    Usuario findOneByUsername(String username);
 }

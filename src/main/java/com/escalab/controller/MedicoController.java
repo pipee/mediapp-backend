@@ -51,7 +51,7 @@ public class MedicoController {
         return new ResponseEntity<Medico>(obj, HttpStatus.OK);
     }
 
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Object> eliminar(@PathVariable("id") Integer id){
         Medico obj = service.leerPorId(id);
         if (obj.getIdMedico() == null){
