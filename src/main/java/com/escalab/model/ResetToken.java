@@ -48,7 +48,9 @@ public class ResetToken {
         return expiracion;
     }
 
-    public void setExpiracion(LocalDateTime expiracion) {
-        this.expiracion = expiracion;
+    public void setExpiracion(int expiracion) {
+        LocalDateTime hoy = LocalDateTime.now();
+        LocalDateTime exp = hoy.plusMinutes(expiracion);
+        this.expiracion = exp;
     }
 }

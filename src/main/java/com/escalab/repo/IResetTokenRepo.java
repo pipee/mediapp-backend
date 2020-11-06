@@ -7,4 +7,5 @@ import com.escalab.model.ResetToken;
 
 public interface IResetTokenRepo extends JpaRepository<ResetToken, Integer> {
 
+    ResetToken findByToken(String token);
 }
